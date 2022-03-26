@@ -25,7 +25,8 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
-    "recharts": "^1.8.5"
+    "recharts": "^1.8.5",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.6",
@@ -36,7 +37,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,5 +64,6 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dunky11/react-saas-template/issues"
-  }
+  },
+  "snyk": true
 }
